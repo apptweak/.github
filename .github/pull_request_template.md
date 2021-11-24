@@ -17,6 +17,12 @@
 <!--- Does your change include a database modification? Can it be deployed without downtime? -->
 <!--- Does it require a cache version bump? -->
 
+## How can I monitor the change in prod to make sure it's working?
+<!--- What logs can you monitor once it's in prod -->
+<!--- Which changes do you plan to see in prod that will let you know the change works as expected -->
+<!--- Which instrumentation have you included to help monitoring and checking the changes -->
+<!--- What kind of test can you run in prod (if any) to make sure it's working -->
+
 ## Checklist
 <!--- Go over all the following points, and put an `x` in all the boxes that apply. -->
 <!--- If you're unsure about any of these, don't hesitate to ask. We're here to help! -->
