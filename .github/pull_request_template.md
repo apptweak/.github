@@ -7,6 +7,11 @@
 <!--- If this has a related ticket/task, add it here -->
 <!--- Also add any AirBrake errors that will be fixed by this -->
 
+## Due Date or Desirable Merge
+<!-- If you have an idea of the urgency of the PR or would like to inform the reviewers of when you would like to get answers -->
+<!-- Be reasonable and keep in mind that people will not be obligated to answer in your time, but this can be helpful to prioritize reviews -->
+<!-- For exemple: Needs to be merged before 2024-02-29 | I would like to merge this sometime in the next two weeks | This is super urgent and is blocking this other task, please review ASAP -->
+
 ## How has this been tested?
 <!--- Please describe in detail how you tested your changes. -->
 <!--- Include details of your testing environment, and the tests you ran to -->
