@@ -1,4 +1,5 @@
 <!--- Provide a general summary of your changes in the Title above -->
+<!-- This is a template, feel free to remove unused sections or add information you think it's needed -->
 
 ## What does this PR do?
 <!--- Describe your changes in detail. Explain the process which led you to decide to do the change as you did -->
