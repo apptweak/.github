@@ -1,8 +1,8 @@
 <!--- Provide a general summary of your changes in the Title above -->
-<!-- This is a template, feel free to remove unused sections or add information you think it's needed -->
+<!-- This is a template, feel free to remove unused sections or add information you think is needed -->
 
 ## What does this PR do?
-<!--- Describe your changes in detail. Explain the process which led you to decide to do the change as you did -->
+<!--- Describe your changes in detail. Explain the process which led you to decide to make the change as you did -->
 
 ## Associated ticket number and/or AirBrake error?
 <!--- If this has a related ticket/task, add it here -->
@@ -15,8 +15,8 @@
 
 ## How has this been tested?
 <!--- Please describe in detail how you tested your changes. -->
-<!--- Include details of your testing environment, and the tests you ran to -->
-<!--- see how your change affects other areas of the code, etc. -->
+<!--- Include details of your testing environment and the tests you ran to -->
+<!--- See how your change affects other areas of the code, etc. -->
 <!--- If you did not add automated tests covering your changes, explain why -->
 
 ## Anticipated impact
@@ -27,7 +27,7 @@
 ## How do you plan to monitor the change in prod to make sure it's working?
 <!--- What logs can you monitor once it's in prod -->
 <!--- Which changes do you plan to see in prod that will let you know the change works as expected -->
-<!--- Which instrumentation have you included to help monitoring and checking the changes -->
+<!--- Which instrumentation have you included to help monitor and check the changes -->
 <!--- What kind of test can you run in prod (if any) to make sure it's working -->
 
 ## Checklist
