@@ -38,7 +38,7 @@ This section helps reviewers understand the broader context and importance of th
 <!--- If one or more lines do not apply, use ~ to ~strikethrough~ the whole line -->
 <!--- If you're unsure about any of these, don't hesitate to ask. We're here to help! -->
 - [ ] My code follows the code style of this project.
-- [ ] I have run tests locally (unit tests).
+- [ ] I have added/updated unit tests.
 - [ ] This has been tested locally (manual).
 - [ ] This has been tested on staging (manual).
 - [ ] My changes require changes in other components/squads/teams
