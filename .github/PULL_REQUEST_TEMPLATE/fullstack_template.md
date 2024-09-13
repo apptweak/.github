@@ -41,6 +41,8 @@
   - [ ] I have updated the documentation accordingly.
 - [ ] My change includes a database modification
   - [ ] I have tested my database modification in staging.
+- [ ] My change affects endpoints for console or search-ads integrations. If so:
+  - [ ] I am tagging a reviewer to explicitly review the security of this change: (flag reviewer here)
 - [ ] My changes require changes in other components/squads/teams
   - [ ] I already did the changes in the other components or notified the responsible people that the changes need to be done
   - [ ] The needed changes are already deployed or ready to be deployed
