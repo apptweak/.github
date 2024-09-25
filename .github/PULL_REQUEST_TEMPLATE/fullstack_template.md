@@ -41,6 +41,8 @@
   - [ ] I have updated the documentation accordingly.
 - [ ] My change includes a database modification
   - [ ] I have tested my database modification in staging.
+- [ ] My change breaks API retrocompatibility.
+  - [ ] I have notified the frontend developers concerned about this change.
 - [ ] My change affects endpoints for console or search-ads integrations. If so:
   - [ ] I am tagging a reviewer to explicitly review the security of this change: (flag reviewer here)
 - [ ] My changes require changes in other components/squads/teams
