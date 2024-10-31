@@ -2,6 +2,7 @@
 
 * [Backend](?expand=1&template=backend_template.md)
 * [Frontend](?expand=1&template=frontend_template.md)
+  * [DataPi](?expand=1&template=frontend_datapi_template.md)
 * [Fullstack](?expand=1&template=fullstack_template.md)
 * [Hotfix](?expand=1&template=hotfix_template.md)
 
