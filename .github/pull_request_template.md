@@ -53,8 +53,8 @@
 - [ ] My change breaks API retrocompatibility.
   - [ ] I have notified the frontend developers concerned about this change.
   - [ ] I have notified the public API consumers about this change. (DataPi)
-- [ ] My change affects endpoints for console or search-ads integrations. If so:
-  - [ ] I am tagging a reviewer to explicitly review the security of this change: (flag reviewer here)
+- [ ] My change touches on some of the following areas: **authorizing access to integration data** (consoles, search ads, MMP), **authentication** (including serving or consuming OAuth endpoints), **cryptography and security** (including generation of secure tokens). If so:
+  - [ ] I am tagging a senior reviewer to specifically review the security of this change: (flag reviewer here)
 - [ ] My changes require changes in other components/squads/teams
   - [ ] I already did the changes in the other components or notified the responsible people that the changes need to be done
   - [ ] The needed changes are already deployed or ready to be deployed
