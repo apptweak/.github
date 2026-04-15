@@ -13,13 +13,6 @@ on:
         type: string
         required: false
         default: ""
-    secrets:
-      gh_token:
-        description: 'GitHub token with permissions to comment on pull requests and create issues'
-        required: true
-      gitleaks_license:
-        description: 'Gitleaks license key'
-        required: true
 
 jobs:
   scan:
@@ -31,8 +24,8 @@ jobs:
           fetch-depth: 100
       - uses: gitleaks/gitleaks-action@v2
         env:
-          GITHUB_TOKEN: ${{ secrets.gh_token }}
-          GITLEAKS_LICENSE: ${{ secrets.gitleaks_license}}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITLEAKS_LICENSE: ${{ secrets.GITLEAKS_LICENSE}}
           GITLEAKS_NOTIFY_USER_LIST: ${{ inputs.gitleaks_notify_user_list }}
           GITLEAKS_ENABLE_COMMENTS: true
           GITLEAKS_CONFIG: ${{ inputs.gitleaks_config }}
