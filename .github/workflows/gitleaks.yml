@@ -3,12 +3,12 @@ name: Reusable gitleaks workflow
 on:
   workflow_call:
     inputs:
-      gitleaks_notify_user_list:
+      GITLEAKS_NOTIFY_USER_LIST:
         description: 'A comma-separated list of users or teams to notify when a leak is found. (e.g. "@org/team1,@user1")'
         type: string
         required: false
         default: "@apptweak/devex"
-      gitleaks_config:
+      GITLEAKS_CONFIG:
         description: 'Path to a gitleaks config file (see https://github.com/gitleaks/gitleaks#configuration for more information)'
         type: string
         required: false
@@ -30,9 +30,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITLEAKS_LICENSE: ${{ secrets.GITLEAKS_LICENSE}}
-          GITLEAKS_NOTIFY_USER_LIST: ${{ inputs.gitleaks_notify_user_list }}
+          GITLEAKS_NOTIFY_USER_LIST: ${{ inputs.GITLEAKS_NOTIFY_USER_LIST }}
           GITLEAKS_ENABLE_COMMENTS: true
-          GITLEAKS_CONFIG: ${{ inputs.gitleaks_config }}
+          GITLEAKS_CONFIG: ${{ inputs.GITLEAKS_CONFIG }}
           GITLEAKS_ENABLE_UPLOAD_ARTIFACT: true
           GITLEAKS_ENABLE_SUMMARY: true
           GITLEAKS_VERSION: latest
