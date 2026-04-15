@@ -3,21 +3,21 @@ name: Reusable gitleaks workflow
 on:
   workflow_call:
     inputs:
-      GITLEAKS_NOTIFY_USER_LIST:
+      gitleaks_notify_user_list:
         description: 'A comma-separated list of users or teams to notify when a leak is found. (e.g. "@org/team1,@user1")'
         type: string
         required: false
         default: "@apptweak/devex"
-      GITLEAKS_CONFIG:
+      gitleaks_config:
         description: 'Path to a gitleaks config file (see https://github.com/gitleaks/gitleaks#configuration for more information)'
         type: string
         required: false
         default: ""
     secrets:
-      GITHUB_TOKEN:
+      gh_token:
         description: 'GitHub token with permissions to comment on pull requests and create issues'
         required: true
-      GITLEAKS_LICENSE:
+      gitleaks_license:
         description: 'Gitleaks license key'
         required: true
   # Allow to run this workflow manually from the Actions tab
@@ -37,11 +37,11 @@ jobs:
           fetch-depth: 100
       - uses: gitleaks/gitleaks-action@v2
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITLEAKS_LICENSE: ${{ secrets.GITLEAKS_LICENSE}}
-          GITLEAKS_NOTIFY_USER_LIST: ${{ inputs.GITLEAKS_NOTIFY_USER_LIST }}
+          GITHUB_TOKEN: ${{ secrets.gh_token }}
+          GITLEAKS_LICENSE: ${{ secrets.gitleaks_license}}
+          GITLEAKS_NOTIFY_USER_LIST: ${{ inputs.gitleaks_notify_user_list }}
           GITLEAKS_ENABLE_COMMENTS: true
-          GITLEAKS_CONFIG: ${{ inputs.GITLEAKS_CONFIG }}
+          GITLEAKS_CONFIG: ${{ inputs.gitleaks_config }}
           GITLEAKS_ENABLE_UPLOAD_ARTIFACT: true
           GITLEAKS_ENABLE_SUMMARY: true
           GITLEAKS_VERSION: latest
