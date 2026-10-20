@@ -43,6 +43,9 @@
   - [ ] I have tested my database modification in staging.
 - [ ] My change breaks API retrocompatibility.
   - [ ] I have notified the frontend developers concerned about this change.
+- [ ] My change adds or modifies an endpoint, controller action, worker or service that reads or changes data. If so:
+  - [ ] The backend checks that the user is **authenticated** and **authorized** for this specific resource and action (Pundit policy or equivalent); it does not rely on the frontend hiding the action.
+  - [ ] Specs cover the denied cases: unauthenticated user, user without the required role (e.g. non-admin company member), and user from another company/workspace.
 - [ ] My change touches on some of the following areas: **authorizing access to integration data** (consoles, search ads, MMP), **authentication** (including serving or consuming OAuth endpoints), **cryptography and security** (including generation of secure tokens). If so:
   - [ ] I am tagging a senior reviewer to specifically review the security of this change: (flag reviewer here)
 - [ ] My changes require changes in other components/squads/teams
