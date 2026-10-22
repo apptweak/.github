@@ -20,7 +20,7 @@ What this repository does **not** do: `CODEOWNERS`, `dependabot.yml`, branch pro
 
 ## Golden rule
 
-**Write as if a competitor, a customer and an attacker were all reading.** If something would be harmless in a private repository but you'd hesitate to post it on a public website, it does not belong here.
+**Write as if anyone on the internet could read it, because they can.** If something would be harmless in a private repository but you'd hesitate to post it on a public website, it does not belong here.
 
 ## Never commit
 
